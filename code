@@ -1,0 +1,17 @@
+print("\n Welcome to Martinothegoat's vertical jump calculator program. \n\n In this program you will be able to measure your vertical jump with just:\n\n 1. Your standing reach\n\n 2. The highest thing you can reach (Max jump touch)\n\n 3. Be capable of calculating your minimum max vertical based off of measure like if you can touch a basketball rim.")
+
+
+print("\n\n First, would you like us to measure in the Imperial system(feet & inches) or the metric system (centimeters)?")
+
+
+print("\n(Type 1 for Imperial, anything else for Metric)")
+
+heightSys =float(input("\n Answer:"))
+
+if heightSys == 1:
+    
+    print("\nNow using feet and inches for any calculation.")
+    
+else:
+    
+    print("\nNow using centimeters for any calculation")
