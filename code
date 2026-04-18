@@ -1,3 +1,42 @@
+#remember to delete all comments
+
+import time
+
+def impMode():
+
+    print("\n your standing reach first.")
+    stdreachFt = input("\nFeet: ")
+    stdrhFt = float(stdreachFt)
+    
+    stdreachIn = input("\nInches: ")
+    stdrhIn = float(stdreachIn)
+    
+    stdReach = stdreachFt + "'" + stdreachIn
+    stdRh = 12 * stdrhFt + stdrhIn
+    
+    print(f"standing reach: {stdReach}")
+    
+    time.sleep(1)
+    
+    #delete this later its for calculations
+    print(stdRh)
+    
+    print(f"\nWith your awesome reach of {stdReach}, would your like to:")
+    print("\n\n 1. Figure out your maximum vertical jump      2. Measure your minimum vertical with height milestones. ")
+    
+    vertCalc = float(input("\nType 1 or 2: "))
+    
+    
+def metricMode():
+
+    pass
+
+
+
+
+#code here
+
+
 print("\n Welcome to Martinothegoat's vertical jump calculator program. \n\n In this program you will be able to measure your vertical jump with just:\n\n 1. Your standing reach\n\n 2. The highest thing you can reach (Max jump touch)\n\n 3. Be capable of calculating your minimum max vertical based off of measure like if you can touch a basketball rim.")
 
 
@@ -12,6 +51,11 @@ if heightSys == 1:
     
     print("\nNow using feet and inches for any calculation.")
     
+    time.sleep(1)
+    
+    impMode()
 else:
     
     print("\nNow using centimeters for any calculation")
+    
+    metricMode()
