@@ -2,6 +2,17 @@
 
 import time
 
+def maxreachCalc():
+    
+    
+    
+def minvertCalc():
+    
+    print("\nWe'll use a basketball rim to measure how much your vertical at least is.")
+    print("Can you touch a basketball rim?")
+    
+    
+
 def impMode():
 
     print("\n your standing reach first.")
@@ -26,7 +37,21 @@ def impMode():
     
     vertCalc = float(input("\nType 1 or 2: "))
     
-    
+    while True:
+        if vertCalc == 1:
+            print("\nAll right, we will figure out your maximum vertical jump.")
+            time.sleep(1)
+            maxreachCalc()
+            break
+        elif vertCalc == 2:
+            print("\nOkay then, lets figure out your minimum vertical with height milestones")
+            time.sleep(1)
+            minvertCalc()
+            break
+        else:
+            
+            print("Remember to type 1 or 2 only please.")
+            vertCalc = float(input("\nType 1 or 2: "))
 def metricMode():
 
     pass
